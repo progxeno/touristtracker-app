@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="textFieldHintColor">#ffd2d2d2</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="ttApp_blue">#41dcff</color>
+    <color name="ttApp_green">#08f200</color>
+    <color name="ttApp_red">#ff0000</color>
+    <color name="ttApp_dark_blue">#FF1A1CFF</color>
+
+</resources>

@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity"
+    android:id="@+id/start"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1"
+        android:id="@+id/main">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registration"
+            android:id="@+id/registrationEditText"
+            android:textSize="@dimen/capture1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eMail"
+            android:id="@+id/eMailText"
+            android:password="false"
+            android:phoneNumber="false"
+            android:autoText="false"
+            android:textSize="@dimen/TextViewSize"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eMailEditText"
+            android:singleLine="false"
+            android:clickable="false"
+            android:password="false"
+            android:hint="@string/eMail"
+            android:enabled="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="@color/textFieldHintColor"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country_zip"
+            android:id="@+id/zipCode"
+            android:textSize="@dimen/TextViewSize" />
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/countrySpinner"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:entries="@array/country_array"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:id="@+id/zipCodeEditText"
+                android:hint="@string/zipCode"
+                android:singleLine="false"
+                android:textColorHint="@color/textFieldHintColor"
+                android:layout_column="1"
+                android:layout_row="0" />
+        </GridLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/numberPicker"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"
+                android:descendantFocusability="blocksDescendants" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yearOfBirth"
+                android:id="@+id/yearOfBirthText"
+                android:textSize="@dimen/TextViewSize"
+                android:layout_gravity="left|top" />
+        </FrameLayout>
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/gridLayout"
+            android:columnCount="5"
+            android:rowCount="1"
+            android:orientation="horizontal"
+            android:rowOrderPreserved="false"
+            android:useDefaultMargins="false" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="bottom"
+                    android:layout_marginBottom="-5dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/backButton"
+                        android:singleLine="false"
+                        android:checked="true"
+                        android:onClick="buttonOnClick" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/currentActivity"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_marginRight="-10dp"
+                        android:clickable="false"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/forwardButton"
+                        android:enabled="true"
+                        android:onClick="buttonOnClick" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="bottom"
+                    android:layout_gravity="right">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="@string/next"
+                        android:id="@+id/forwardButton"
+                        android:background="@drawable/image_button_style"
+                        android:onClick="buttonOnClick"
+                        android:gravity="right" />
+
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/forwardButton"
+                        android:src="@drawable/forward"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:onClick="buttonOnClick" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/radioGroup"
+                    android:gravity="bottom">
+
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/backButton"
+                        android:src="@drawable/back"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:onClick="buttonOnClick" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="@string/back"
+                        android:id="@+id/backButton"
+                        android:background="@drawable/image_button_style"
+                        android:onClick="buttonOnClick"
+                        android:gravity="left" />
+
+                </RadioGroup>
+            </FrameLayout>
+        </GridLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

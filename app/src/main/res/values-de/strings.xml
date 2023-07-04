@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="returners">Ich war schon einmal in der Region Bodensee</string>
+    <string name="men">Mann</string>
+    <string name="women">Frau</string>
+    <string name="sex">Ich bin</string>
+    <string name="zipCode">PLZ          </string>
+    <string name="name">Name</string>
+    <string name="yearOfBirth">Jahrgang</string>
+    <string name="start">Start</string>
+    <string name="welcome">Wilkommen</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="welcomeString">bei der Tourist Tracking App der HTWG Konstanz. Um die App zu starten, gib bitte die geforderten Daten ein.</string>
+    <string name="next">Weiter</string>
+    <string name="back">Zurück</string>
+    <string name="finish">Herzlichen Glückwunsch</string>
+    <string name="finishString">du hast die App erfolgreich konfiguriert!</string>
+    <string name="rating">Bewertung</string>
+    <string name="capture">Zielort</string>
+    <string name="description">Beschreibung</string>
+    <string name="save">Speichern</string>
+    <string name="registration">Anmeldung</string>
+    <string name="eMail">EMail</string>
+    <string name="home">Home</string>
+    <string name="goGreen">Go Green</string>
+    <string name="chooseTransport">Wähle dein Transportmittel</string>
+    <string name="chooseTransportTap">Transportmittel</string>
+    <string name="ratingsTap">Bewertung</string>
+    <string name="goGreenTap">go Green</string>
+    <string name="help">Hilfe</string>
+    <string name="addRating">Bewertung Hinzufügen</string>
+    <string name="incorrectInput">Bitte Text eingeben!</string>
+    <string name="byFootText">Aktuelles Transportmittel: Fahrrad oder zu Fuß</string>
+    <string name="byShipText">Aktuelles Transportmittel: Schiff</string>
+    <string name="byBusText">Aktuelles Transportmittel: Bus oder Zug</string>
+    <string name="byCarText">Aktuelles Transportmittel: Auto</string>
+    <string name="myRoutesCar">Auto</string>
+    <string name="tracking">Tracking</string>
+    <string name="country_zip">Land, PLZ</string>
+    <string name="notPossible">Nicht möglich!</string>
+    <string name="insertComplete">Bitte die Daten vollständig eingeben!</string>
+    <string name="dataNotSaved">Daten nicht gespeichert!</string>
+    <string name="helpMenu">Hilfe</string>
+    <string name="helpSelectTransportVehicle">Durch klicken auf das jeweilige Symbol, kann das Transportmittel geändert werden.</string>
+    <string name="homeMenu">Home Tab</string>
+    <string name="helpDailyRoutesTab">Tages Routen</string>
+    <string name="helpDailyRoutes">In dieser ansicht wird die zurückgelegte Distanz in km sowie der Indikator für die Nachhaltigkeit angezeigt.</string>
+    <string name="helpSaveRating">Hier klicken um eingegebene Bewertung zu speichern.</string>
+    <string name="helpStartTracking">Klicken startet das Tracken. GPS muss aktiviert sein.</string>
+    <string name="helpStopTracking">Klicken beendet das Tracken.</string>
+    <string name="helpAddRating">Klicken um eine neue Bewertung zu erstellen.</string>
+
+
+</resources>

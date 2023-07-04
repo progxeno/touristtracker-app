@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="htwg.trackingapp.MainMenu" >
+    <item android:id="@+id/addRating"
+        android:title="@string/addRating"
+        android:icon="@drawable/ic_action_add"
+        android:orderInCategory="100"
+        android:showAsAction="always" />
+    <item android:id="@+id/help"
+        android:title="@string/help"
+        android:icon="@drawable/ic_action_help"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

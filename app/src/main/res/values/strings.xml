@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_activity_first_start_screen_1">first_start_screen_1</string>
+    <string name="title_activity_first_start_screen_3">first_start_screen_3</string>
+    <string name="title_activity_add_rating">New Rating</string>
+    <string name="title_activity_test_fullscreen">test_fullscreen</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="emptyString"></string>
+    <string name="title_activity_ratings">Ratings</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_main_home">main_home</string>
+    <string name="title_activity_help_menu">HelpMenu</string>
+
+    <string-array name="country_array">
+        <item>D</item>
+        <item>A</item>
+        <item>CH</item>
+        <item>F</item>
+        <item>I</item>
+        <item>other</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">TrackingApp</string>
+    <string name="men">Men</string>
+    <string name="name">Name</string>
+    <string name="returners">I have been to the region lake Constance before</string>
+    <string name="sex">Select your gender</string>
+    <string name="start">Start</string>
+    <string name="yearOfBirth">Year of birth</string>
+    <string name="welcome">Welcome</string>
+    <string name="women">Women</string>
+    <string name="zipCode">Zip code</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="back">Back</string>
+    <string name="finish">Congratulations</string>
+    <string name="finishString">you have successfully configured the app</string>
+    <string name="next">Next</string>
+    <string name="eMail">EMail</string>
+    <string name="home">Home</string>
+    <string name="goGreen">Go Green</string>
+    <string name="addRating">Add Rating</string>
+    <string name="byBusText">Current transport vehicle: bus or train</string>
+    <string name="byCarText">Current transport vehicle: car</string>
+    <string name="byFootText">Current transport vehicle: cycling or walking</string>
+    <string name="byShipText">Current transport vehicle: ferry</string>
+    <string name="capture">Titel</string>
+    <string name="chooseTransport">Choose vehicle</string>
+    <string name="chooseTransportTap">Transport</string>
+    <string name="country_zip">Country, zip Code</string>
+    <string name="description">Description</string>
+    <string name="help">Help</string>
+    <string name="incorrectInput">Please input text!</string>
+    <string name="myRoutesCar">car</string>
+    <string name="rating">Rating</string>
+    <string name="registration">Registration</string>
+    <string name="save">Save</string>
+    <string name="welcomeString">Thank you for using the Tourist Tracking App of the HTWG. To launch the app, please enter the required data.</string>
+    <string name="goGreenTap">Go Green</string>
+    <string name="ratingsTap">Ratings</string>
+    <string name="tracking">Tracking</string>
+    <string name="notPossible">Not possible!</string>
+    <string name="insertNotComplete">Insert complete data!</string>
+    <string name="dataNotSaved">Data not saved!</string>
+    <string name="homeMenu">Home Tab</string>
+    <string name="helpDailyRoutes">Here you can see the km you made each day and an indicator for your sustainability.</string>
+    <string name="helpAddRatingTab">Add Rating</string>
+    <string name="helpDailyRoutesTab">Daily Routes</string>
+    <string name="helpMenu">Help</string>
+    <string name="helpRatingsTab">Ratings</string>
+    <string name="helpSaveRating">Click on this Icon to save the Rating. You get back to the main menu.</string>
+    <string name="helpSelectTransportVehicle">Click on one of this four transport vehicles. You can change them during tracking.</string>
+    <string name="helpStartTracking">Click on this button to start the tracking. The icon changes to the red stop button.</string>
+    <string name="helpStopTracking">Click on this button to stop the tracking. The icon changes to the green start button.</string>
+    <string name="homeMenuTab">Home menu</string>
+    <string name="insertComplete">Please insert complete data!</string>
+    <string name="helpAddRating">Click on this button to add a new rating.</string>
+
+</resources>

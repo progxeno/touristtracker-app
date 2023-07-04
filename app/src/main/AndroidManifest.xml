@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="htwg.trackingapp" >
+
+    <application
+        android:name=".CrashReport"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="TouristTracking"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".FirstStartScreen1"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".FirstStartScreen2"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".FirstStartScreen3"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AddRating"
+            android:label="@string/rating"
+            android:parentActivityName=".MainMenu"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name=".MainMenu"
+            android:label="TouristTracking"
+            android:theme="@android:style/Theme.Holo.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelpMenu"
+            android:label="@string/title_activity_help_menu"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"
+            android:parentActivityName=".MainMenu" >
+        </activity>
+        <receiver android:name=".ReceiverPositioningAlarm" >
+            <intent-filter>
+                <action android:name="com.mple.touristtrackingpartalex.app.ACTION_REFRESH_SCHEDULE_ALARM2" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.FLAG_ACTIVITY_NEW_TASK"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".SrvPositioning">
+        </service>
+        <service
+            android:name=".DataPostTimer">
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>

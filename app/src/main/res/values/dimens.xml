@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="TextViewSize">20dp</dimen>
+    <dimen name="capture1">25dp</dimen>
+    <dimen name="standard_image_button">3dp</dimen>
+    <dimen name="dailyRoutesIconSize">43dp</dimen>
+</resources>
